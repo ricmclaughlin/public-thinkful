@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display');
+
+* {
+  font-family: 'Comic Sans MS';
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+}
+
+main {
+  padding: 30px;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  font-family: 'Fauna One', serif;
+  font-size: 12px;
+  color: green;
+  font-weight: normal
+}

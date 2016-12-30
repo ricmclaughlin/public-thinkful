@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+html {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.yeller {
+  background-color: #E8B95D;
+}
+
+header {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h5 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 1px solid lightgray;
+  margin-top: 15px;
+}
+
+.box img {
+  max-width:100%;
+  max-height:100%;
+
+}
+
+.box footer {
+  padding: 15px;
+}
+
+.box footer h2 {
+
+}
+
+.box footer p {
+
+}

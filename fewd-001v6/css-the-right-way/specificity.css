@@ -1,0 +1,19 @@
+.container {
+  padding: 30px;
+}
+
+.smallerone {
+  color: blue;
+}
+
+#bigone {
+  color: pink;
+}
+
+ul.foo li {
+  color: green;
+}
+
+li {
+  color: red;
+}

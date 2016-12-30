@@ -1,0 +1,21 @@
+div {
+  background-color: azure;
+  border: 1px solid aquamarine;
+  padding: 30px;
+}
+
+p {
+  color: red;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+h2 {
+  color: green;
+}
+
+ul {
+  color: purple;
+}

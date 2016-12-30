@@ -1,0 +1,9 @@
+/* targeting direct children */
+.foo > p {
+  color: blue;
+}
+
+/* targeting decendents */
+.foo .bob p  {
+  color: green;
+}

@@ -1,0 +1,12 @@
+.outside {
+  border: red 1px solid;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border: dashed green 3px;
+  margin: 20px;
+  padding: 20px;
+}
