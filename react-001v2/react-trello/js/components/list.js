@@ -4,15 +4,15 @@ import ReactDOM from 'react-dom';
 import Card from './card';
 
 export default function List(props) {
-  let cards = [];
-
+  let cardsHTML = [];
+  
   for (var i = 0; i < 3; i++) {
-    cards.push(<div className="col-4"><Card text="A card title" description=""/></div>);
+    cardsHTML.push(<div className="col-4" key={i}><Card key={i} rowTitle={props.rowTitle} text={props.cards[i].text + i} description={props.cards[i].text + i}/></div>);
   }
 
   return (
-    <div className="row">
-      {cards}  
+    <div key={props.id} className="row">
+      {cardsHTML}
     </div>  
   );
 }
