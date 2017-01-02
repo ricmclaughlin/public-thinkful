@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analog Sea - Login</title>
+  <meta name="keywords" content="analog, sea, analogsea, cloud, computing,">
+  <meta charset="utf-8" name="description" content="Ric McLaughlin's version of the analog sea Challenge from Unit 1 Lesson 6 of Thinkful's Frontend Web Development course">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <img id="logo" src="images/logo.png" alt="">
+    <form action="post" url="/signup/" >
+      <signup-title class="center">
+        <h1>Sign up</h1>
+      </signup-title>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="foo@bar.com">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="1234passw0rd">
+      <button type="submit">Signup</button>
+      <div class="center">
+        <p class="forgot"><a href="/forgot-password/new">Forgot Password?</a></p>
+      </div>
+    </form>
+    
+    </div>
+    <div class="center">
+      <p>Already have an account? <a href="/login">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>

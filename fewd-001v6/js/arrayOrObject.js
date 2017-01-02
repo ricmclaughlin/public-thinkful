@@ -1,3 +1,8 @@
+'use strict';
+
+// dif in syntax
+var
+
 // use an array for LIFO, FIFO
 
 // use an array to store an ordered list
