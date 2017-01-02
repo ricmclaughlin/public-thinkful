@@ -51,12 +51,27 @@ header h5 {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
+}
+
+.row-header {
+  display: inline-block;
+}
+
+.row-header-form {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.row-header-form button {
+  margin-left: 5px;
+}
+
+.row-header-form input[type=text] {
+  
 }
