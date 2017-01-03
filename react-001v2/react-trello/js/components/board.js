@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import List from './list';
+import ListContainer from './list-container';
 
 export default function Board(props) {
   let cards = [
@@ -22,7 +22,7 @@ export default function Board(props) {
   let lists = [];
 
   for (var i = 0; i < 3; i++) {
-    lists.push(<List cards={cards} rowTitle={props.rowTitles[i]} title={props.rowTitle}key={i}/>);
+    lists.push(<ListContainer cards={cards} rowTitle={props.rowTitles[i]} title={props.rowTitle} key={i}/>);
   }
 
   return (
