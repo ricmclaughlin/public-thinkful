@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>content that was in JS Bin</title>
+  <link rel="stylesheet/css" href="styles.js">
+  <!-- the script tag can be in the head  -->
+  
+  
+</head>
+<body>
+  <main>
+    <h1>Lemme show you some Fibonaccis</h1>
+    <h1>JS in script tag</h1>
+  </main>
+  <!-- or in the body... -->
+  <script src="script-tag.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // for many it is really easy to debug
+      // a script in page
+      alert('hi!');
+      main();
+    });
+  </script>  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>content that was in JS Bin</title>
+  <!-- 1. These link magically got added with js bin (we have to add it manually) -->
+  <link rel="stylesheet/css" href="styles.js">
+  <script src="index.js"></script>
+  <!-- 2. ordering of scripts IS important
+        When one of your scripts contains dependencies on another script.
+        When you are running code in the global namespace that requires a dependency on another script.
+  -->
+  
+</head>
+<body>
+  <main>
+    <!-- This page  -->
+    <h1>Lemme show you some Fibonaccis</h1>
+  </main>
+  <!-- 3. here jquery is loaded from a CDN and is versioned but uncompressed & unbundled 
+      good production code is compressed (reduce overall size),
+                              bundled (reduce number of requests),
+                              versioned (cache unchanged files)
+                              and CDN-ified (move content closer to user)
+  -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  
+</body>
+</html>
