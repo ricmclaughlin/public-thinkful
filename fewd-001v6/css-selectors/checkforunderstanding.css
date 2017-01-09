@@ -1,28 +1,30 @@
 
-
 .bluetext {
   color: blue;
+}
+
+span {
+  color: green;
 }
 
 #bold {
   font-weight: bold;
 }
 
-ol > li > ol > li {
-  font-weight: bold;
+ul.foo  {
+  font-weight: bold; 
 }
 
 ol > li > ol > li:nth-child(even) {
   color: green;
 }
 
-
 a:link {
   color: green;
 }
 
 a:hover {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 a:visited {
