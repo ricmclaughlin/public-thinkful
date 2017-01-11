@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  
+  function makeDog(color, breed) {
+    'use strict';
+    // return an object with a color key and a breed key
+    // and a function bark() that returns 'arf, arf'
+
+    return true;
+  }
+
+  function testDog() {
+    var dog = makeDog('brown', 'hound');
+    console.log(dog);
+    
+    if ((dog.bark() === 'arf, arf') &&
+          (dog.color === 'brown') &&
+          (dog.breed === 'hound')) {
+      console.log('it works!');
+    } else {
+      console.log('try again');
+    }
+  }
+  testDog();
+</script>
+</body>
+</html>

@@ -1,11 +1,12 @@
-'use strict';
-
 function mostFrequentWord(words) {
+  'use strict';
   // your code here
   // `words` is an array of strings.
   var wordFrequency = {};
   var possibleKey = '';
 
+  // this function finds the most common word AFTER
+  // the wordFrequency object has been created...
   function mostCommonWord() {
     //set initial most common word as the first key
     var mostCommon = Object.keys(wordFrequency)[0];;
@@ -19,8 +20,18 @@ function mostFrequentWord(words) {
     return mostCommon;    
   }
   
+  // this function builds the wordFrequency Object
+  // and gets called by forEach
+  // this is called a higher order function!
   function incrementWord(element, index, array) {
-    possibleKey = element.replace(/[^\x20-\x7E]+/g, '').trim();
+    // this commented line cleans the element up a bit...
+    // because all the odd stuff in the comparison isn't clean 
+    // but makes NO diffence in the answer 
+    // possibleKey = element.replace(/[^\x20-\x7E]+/g, '').trim();
+    possibleKey = element;
+    
+    // uncomment to see the "uncleaned" possibleKey
+    //console.log(possibleKey);
 
     if (wordFrequency.hasOwnProperty(possibleKey)) {
       // key exists increment element
@@ -31,18 +42,25 @@ function mostFrequentWord(words) {
     }
   }
   
+  // now call incrementWord for each word in the words array
   words.forEach(incrementWord);
+  
+  // after the wordFrequency object is built
+  // figure out which word is the most common and return it
   return mostCommonWord();
 }
 
+// `getTokens` returns an alphabetically sorted list of words
 function getTokens(rawString) {
   // returns an alphabetically sorted list of words, removing punctuation
   // characters
-  return rawString.toLowerCase().split(/[ ,!.";:-?]+/).filter(Boolean).sort();
+  // this is the old regular expression from a couple of weeks ago...
+  //return rawString.toLowerCase().split(/[ ,!.";:-?]+/).filter(Boolean).sort();
+  
+  // this is the new regex that appears in the jsbin now... 
+  // it does not matter which one you use... does not affect the answer
+  return rawString.toLowerCase().split(/[ ,!.";:-]+/).filter(Boolean).sort();
 }
-
-
-// `getTokens` returns an alphabetically sorted list of words
 
 (function testMostFrequentWord() {
  var spaceOddityText = 'Ground Control to Major Tom\n \
