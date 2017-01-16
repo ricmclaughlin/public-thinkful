@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // scenario 1
+    // js helps you... it assumes you FORGOT to put var
+    // varThatJsMakesGlobal = 'yep I\'m a global';
+    // console.log(varThatJsMakesGlobal);
+    // console.log(window.varThatJsMakesGlobal)
+
+    // scenario 2
+    // you did for get to put var... 
+    // catch the mistake and throw and error but you don't want 
+    // 'use strict';
+    // varThatJsMightMakesGlobal = 'yep I\'m a global';
+    // console.log(varThatJsMightMakesGlobal);
+
+    // scenario 3
+    // use strict outside the function does NOT
+    // work inside a function!
+    // 'use strict' inside a function does NOT
+    // work unless it is executed... it is a runtime error
+    // 'use strict';
+    function makeMeStrictPlease () {
+      varThatJsMightMakesGlobal = 1;
+    }
+    makeMeStrictPlease();
+    // varThatJsMightMakesGlobal is out of scope... 
+    // the function makeMeStrictPlease ran...
+    // console.log(varThatJsMightMakesGlobal);
+    // console.log(window.varThatJsMakesGlobal)
+
+    
+  </script>
+</body>
+</html>
